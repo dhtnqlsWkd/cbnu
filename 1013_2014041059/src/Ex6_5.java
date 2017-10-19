@@ -18,7 +18,7 @@ class S {
 	}
 	
 	int getTotal() {
-		return kor+eng+math;
+		return kor + eng + math;
 	}
 	
 	float getAverage() {
