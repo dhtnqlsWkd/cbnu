@@ -1,14 +1,5 @@
 
-class Ex6_5 {
-	
-	public static void main(String args[]) {
-		Student s = new Student("ȫ�浿",1,1,100,60,76);
-		System.out.println(s.info());
-	}
-	
-}
-
-class Student {
+class S {
 	
 	String name;
 	int ban;
@@ -17,7 +8,7 @@ class Student {
 	int eng;
 	int math;
 	
-	Student(String name, int ban, int no, int kor, int eng, int math) {
+	S(String name, int ban, int no, int kor, int eng, int math) {
 		this.name = name;
 		this.ban = ban;
 		this.no = no;
@@ -36,6 +27,15 @@ class Student {
 	
 	public String info() {
 		return name	+ "," + ban + "," + no + "," + kor + "," + eng + "," + math	+ "," + getTotal() + "," + getAverage();
+	}
+	
+}
+
+public class Ex6_5 {
+	
+	public static void main(String args[]) {
+		S s = new S("ȫ�浿", 1, 1, 100, 60, 76);
+		System.out.println(s.info());
 	}
 	
 }
