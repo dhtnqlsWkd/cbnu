@@ -1,9 +1,20 @@
 
-public class Manager {
+public class Manager extends Employee {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+	private String position;
+	
+	public Manager(String empNo, String name, String part, String position) {
+		setEmpNo(empNo);
+		setName(name);
+		setPart(part);
+		this.position = position;
+	}
+	
+	public String addStr() {
+		String result = "";
+		result += "Á÷Ã¥ : " + position + "\n";
+		
+		return result;
 	}
 
 }

@@ -1,9 +1,18 @@
 
-public class Overriding_Manager {
+public class Overriding_Manager extends Employee{
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+	private String position;
+	
+	public Overriding_Manager(String empNo, String name, String part, String position) {
+		super(empNo, name, part);
+		this.position = position;
+	}
+	
+	public String resultStr() {
+		String result = super.resultStr();
+		result += "Á÷Ã¥ : " + position + "\n";
+		
+		return result;
 	}
 
 }
