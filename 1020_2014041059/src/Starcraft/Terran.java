@@ -1,3 +1,4 @@
+package Starcraft;
 
 public class Terran extends Starcraft {
 

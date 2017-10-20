@@ -1,11 +1,12 @@
+package Company;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
-public class Convert_Company {
+public class Super_Company {
 
 	public static void main(String[] args) {
 		String result = "";
-		Employee obj = null;
+		Employee emp = null;
 		Manager mng = null;
 		String empNo = null;
 		String name = null;
@@ -27,13 +28,13 @@ public class Convert_Company {
 		}
 		
 		if (position.equals("1")) {
-			obj= new Employee(empNo, name, part);
-			result += obj.resultStr();
+			emp = new Employee(empNo, name, part);
+			result += emp.resultStr();
 		}
 		else {
 			position = (position.equals("2")) ? "대리" : "과장";
-			obj = new Manager(empNo, name, part, position);
-			result += mng.resultStr();
+			mng = new Manager(empNo, name, part, position);
+			result += mng.addStr();
 		}
 		
 		System.out.println(result);

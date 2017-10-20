@@ -1,12 +1,12 @@
+package Company;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
-public class Overriding_Company {
+public class Convert_Company {
 
 	public static void main(String[] args) {
 		String result = "";
-		Employee emp = null;
-		Manager mng = null;
+		Employee obj = null;
 		String empNo = null;
 		String name = null;
 		String part = null;
@@ -27,13 +27,13 @@ public class Overriding_Company {
 		}
 		
 		if (position.equals("1")) {
-			emp = new Employee(empNo, name, part);
-			result += emp.resultStr();
+			obj= new Employee(empNo, name, part);
+			result += obj.resultStr();
 		}
 		else {
 			position = (position.equals("2")) ? "대리" : "과장";
-			mng = new Manager(empNo, name, part, position);
-			result += mng.resultStr();
+			obj = new Manager(empNo, name, part, position);
+			result += obj.resultStr();
 		}
 		
 		System.out.println(result);

@@ -1,14 +1,14 @@
-
-public class Super_Manager extends Employee {
+package Company;
+public class Overriding_Manager extends Employee{
 
 	private String position;
 	
-	public Super_Manager(String empNo, String name, String part, String position) {
+	public Overriding_Manager(String empNo, String name, String part, String position) {
 		super(empNo, name, part);
 		this.position = position;
 	}
 	
-	public String addStr() {
+	public String resultStr() {
 		String result = super.resultStr();
 		result += "Á÷Ã¥ : " + position + "\n";
 		

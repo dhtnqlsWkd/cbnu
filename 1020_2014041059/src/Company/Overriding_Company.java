@@ -1,7 +1,9 @@
+package Company;
+
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
-public class Company {
+public class Overriding_Company {
 
 	public static void main(String[] args) {
 		String result = "";
@@ -33,7 +35,7 @@ public class Company {
 		else {
 			position = (position.equals("2")) ? "대리" : "과장";
 			mng = new Manager(empNo, name, part, position);
-			result += mng.resultStr() + mng.addStr();
+			result += mng.resultStr();
 		}
 		
 		System.out.println(result);

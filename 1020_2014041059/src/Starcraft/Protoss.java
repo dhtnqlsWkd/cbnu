@@ -1,3 +1,4 @@
+package Starcraft;
 
 public class Protoss extends Starcraft {
 	

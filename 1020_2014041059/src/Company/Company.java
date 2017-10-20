@@ -1,7 +1,8 @@
+package Company;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
-public class Super_Company {
+public class Company {
 
 	public static void main(String[] args) {
 		String result = "";
@@ -33,7 +34,7 @@ public class Super_Company {
 		else {
 			position = (position.equals("2")) ? "대리" : "과장";
 			mng = new Manager(empNo, name, part, position);
-			result += mng.addStr();
+			result += mng.resultStr() + mng.addStr();
 		}
 		
 		System.out.println(result);
